@@ -1,0 +1,708 @@
+/* Reglas generales */
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Poppins&display=swap');
+
+body {
+
+    background-color: #1d2224;
+    font-family: 'Poppins', sans-serif!important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'MedievalSharp';
+    
+}
+
+.altura{
+    line-height: 6vh;
+}
+
+.altura-sa{
+    line-height: 10vh;
+}
+
+.fondo {
+    background-image: url("../assets/images/fondo.jpg") !important;
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.titulo{
+    color: #fdb900;
+    text-align: center;
+}
+.nav-link-text {
+    line-height: normal;
+    font-family: 'MedievalSharp';
+    transition: 0.3s;
+    text-decoration: none;
+    color: #c9c9c9;
+    padding: 5px 10px 5px 10px;
+
+}
+
+.nav-link-text:hover,
+.nav-link-text.activo {
+    color: #fdb900;
+    font-weight: bolder;
+}
+
+.video-responsive {
+    max-width: 100%;
+    max-height: calc(100vh - 6rem);
+    /* Ajusta este valor según la altura deseada del video */
+}
+
+section {
+    /* justify-content: center;
+    display: flex;
+    min-height: 100vh;
+    align-items: center; */
+    background-color: #1d2224;
+    color: #ffffff;
+
+}
+
+/* section h1{
+    font-weight: 700;
+    font-size: 10vh;
+} */
+
+
+.modal-header {
+    background-color: #141718 !important;
+    border: none !important;
+}
+
+.btn.player {
+    font-size: 2rem;
+}
+
+.form-image {
+    width: 60vh;
+}
+
+.playerFields {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Fondos */
+
+.img-bg{
+    background-repeat: no-repeat;
+    /* background-size: 60vh; */
+    background-size:contain;
+    background-position: center;
+}
+#dota2{
+    background-image: url("../assets/images/fondos/20240129_210724_0000.png");
+}
+
+#lol{
+    background-image: url("../assets/images/fondos/20240129_210910_0000.png");
+}
+
+#chon{
+    background-image: url("../assets/images/fondos/20240129_211228_0000.png");
+}
+
+#cml{
+    background-image: url("../assets/images/fondos/20240131_020504_0000.png");
+}
+
+#fondo-illi{
+    background-image: url("../assets/images/fondos/20240129_210157_0000.png");
+}
+
+#comunidad-bg{
+    background-image: url("../assets/images/fondos/20240129_210518_0000.png");
+}
+
+#chots{
+    background-image: url("../assets/images/fondos/20240131_025019_0000.png");
+}
+
+#cf{
+    background-image: url("../assets/images/fondos/20240129_211744_0000.png");
+}
+
+#cf84{
+    background-image: url("../assets/images/fondos/20240131_014536_0000.png");
+}
+
+#cg{
+    background-image: url("../assets/images/fondos/20240131_022717_0000.png");
+}
+
+#subastas-ap{
+    background-image: url("../assets/images/fondos/20240129_212551_0000.png");
+}
+/********** Range Input Styles **********/
+/*Range Reset*/
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 15rem;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+    outline: none;
+}
+
+/***** Chrome, Safari, Opera and Edge Chromium styles *****/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #4d4e4e;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    margin-top: -1.25vh;
+    /*custom styles*/
+    border-radius: 8rem;
+    background-color: #fdb900;
+    height: 4vh;
+    width: 1.5vh;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+    border: 1px solid #ffcf4d;
+    outline: 3px solid #ffcf4d;
+    outline-offset: 0.125rem;
+}
+
+/******** Firefox styles ********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+    background-color: #4d4e4e;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+    border: none;
+    /*Removes extra border that FF applies*/
+    border-radius: 8rem;
+    /*Removes default border-radius that FF applies*/
+    /*custom styles*/
+    background-color: #fdb900;
+    height: 4vh;
+    width: 1.5vh;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+    border: 1px solid #ffcf4d;
+    outline: 3px solid #ffcf4d;
+    outline-offset: 0.125rem;
+}
+
+.porque-illidaris {
+    background-image: url('../assets/images/porque.png');
+}
+
+
+/*contenedor de Stores */
+
+
+#Stores h1 {
+    color: #ffc300;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+
+#Stores p {
+    font-size: 20px;
+}
+
+#Stores .card-img-top {
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+#Stores img:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* fin  contenedor de stores*/
+
+
+/*subasta y apuestas*/
+
+#Subastas h1 {
+    color: #ffc300;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+
+#Subastas .carousel-container {
+    position: relative;
+}
+
+#Subastas .carousel-container .carousel-inner span {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-95%);
+
+}
+
+#Subastas .carousel-container span img {
+    width: 20%;
+    margin-left: 80%;
+}
+
+/* fin subasta y apuesta*/
+
+/*Bosting*/
+
+#Bosting h1 {
+    color: #ffc300;
+    font-weight: bold;
+    padding-bottom: 30px;
+
+}
+
+
+#Bosting .carousel-container {
+    position: relative;
+}
+
+#Bosting .carousel-container .carousel-inner span {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-95%);
+
+}
+
+#Bosting .carousel-container span img {
+    width: 20%;
+    margin-left: 80%;
+}
+
+/* fin Bosting*/
+
+/* contenedor de Alianza*/
+#Alianza-bg{
+    background-image: url("../assets/images/alianza/spectral2.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+#Alianza h1 {
+    color: #ffc300;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+#Alianza .text-img {
+    width: 85%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(235, 232, 232);
+
+}
+
+@media screen and (max-width: 480px) {
+
+    #Alianza .text-img {
+        width: 85%;
+        top: 60%;
+
+    }
+}
+
+#Alianza p {
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 480px) {
+
+    #Alianza p {
+        font-size: 14px;
+        font-weight: 600;
+
+    }
+}
+
+#Alianza .img-1 img {
+    width: 660px;
+    height: auto;
+
+}
+
+@media screen and (max-width: 480px) {
+
+    #Alianza .img-1 img {
+        width: 90%;
+
+    }
+}
+
+#Alianza .img-2 img {
+    width: 880px;
+    height: auto;
+
+}
+
+@media screen and (max-width: 480px) {
+
+    #Alianza .img-2 img {
+        width: 95%;
+
+    }
+}
+
+/* fin contenedor  de alianza */
+
+
+/* contenedor ListaEstafadores*/
+
+#ListaEstafadores h1 {
+    color: #ffc300;
+    font-weight: bold;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+
+#ListaEstafadores {
+    text-align: center;
+    /* padding: 50px 0; */
+}
+
+#ListaEstafadores #searchInput {
+    font-size: 20px;
+    width: 25%;
+    padding-left: 40px;
+    background-image: url('../assets/images/estafadores/lupa.webp');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 25px 25px;
+    border-radius: 5px;
+
+}
+
+@media screen and (max-width: 480px) {
+
+    #ListaEstafadores #searchInput {
+        width: 75%;
+
+    }
+}
+
+#ListaEstafadores input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+
+#ListaEstafadores input[type="text"]:focus {
+    outline: none;
+    border-color: #5366d1;
+}
+
+#ListaEstafadores ul {
+    width: 25%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+}
+
+@media screen and (max-width: 480px) {
+
+    #ListaEstafadores ul {
+        width: 75%;
+
+    }
+}
+
+#ListaEstafadores #estafadoresUl {
+    max-height: 650px;
+    /* Altura máxima de la lista */
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 480px) {
+
+    #ListaEstafadores #estafadoresUl {
+        font-size: 37px !important;
+
+    }
+}
+
+#ListaEstafadores ul li {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#ListaEstafadores ul li:hover {
+    transform: translateY(-5px);
+    color: #e4e2e2;
+}
+
+/* fin
+
+
+
+/* contenedor de streaming */
+
+
+#Streaming h1 {
+    color: #ffc300;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+#Streaming video {
+    width: 30%;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 750px) {
+
+    #Streaming video {
+        width: 60%;
+
+
+    }
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    /* Espacio entre los iconos */
+}
+
+.bi-instagram {
+    font-size: 24px;
+    color: #e84b57;
+    transition: color 0.3s;
+}
+
+.bi-instagram:hover {
+    color: #d85094;
+}
+
+.bi-tiktok {
+    font-size: 24px;
+    color: #2f2f30;
+    transition: color 0.3s;
+}
+
+.bi-tiktok:hover {
+    color: #000000;
+}
+
+#Streaming .bi-facebook {
+    font-size: 24px;
+    color: #0866ff;
+    transition: color 0.3s;
+}
+
+#Streaming .bi-facebook:hover {
+    color: #0651cc;
+}
+
+.bi-twitch {
+    font-size: 24px;
+    color: #7265ff;
+    transition: color 0.3s;
+}
+
+.bi-twitch:hover {
+    color: #5b50cc;
+}
+
+.bi-youtube {
+    font-size: 24px;
+    color: red;
+    transition: color 0.3s;
+}
+
+.bi-youtube:hover {
+    color: #cc0000;
+}
+
+#Streaming p {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+
+
+/* Fin  de contenedor de streaming */
+
+/* contenedor de torneos */
+
+
+#Torneos h1 {
+    color: #ffc300;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+#Torneos img {
+    width: 700px;
+}
+
+@media screen and (max-width: 750px) {
+
+    #Torneos img {
+        width: 90%;
+
+    }
+}
+
+/* fin del contenedor de torneos */
+
+/* contenedor de sorteos*/
+
+
+
+#Sorteos h1 {
+    color: #ffc300;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+
+/*fin de contenedor de  Sorteos*/
+
+/* contenedor de memes*/
+
+
+
+#Memes h1 {
+    color: #ffc300;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+#Memes .card {
+    background-color: #212529;
+    border: none;
+}
+
+#Memes .card img {
+    border-radius: 5px;
+}
+
+
+/*fin de contenedor de  memes*/
+
+/* intermedios*/
+#img-intermedio {
+    padding: 4vh 0 4vh 0;
+}
+
+#img-intermedio .img-1 {
+    width: 30vh;
+}
+
+@media screen and (max-width: 750px) {
+
+    #img-intermedio .img-1 {
+        padding-top: 35px;
+        width: 150px;
+
+    }
+}
+
+#img-intermedio .img-2 {
+    width: 200px;
+}
+
+@media screen and (max-width: 750px) {
+
+    #img-intermedio .img-2 {
+        padding-top: 35px;
+        width: 150px;
+
+    }
+}
+
+/*  fin  intermedios   */
+
+/* footer */
+
+#Footer {
+    margin-top: 100px;
+    background-color: #111111;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#Footer hr {
+    border-top: 1px solid #e2e1e1;
+    margin-bottom: 20px;
+}
+
+#Footer img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 750px) {
+
+    #Footer img {
+        width: 50px;
+
+    }
+}
+
+
+#Footer p {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* fin footer*/
