@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Poppins&display=swap');
 
 body {
-
+    background-image: url("../assets/images/fondo2.jpg")!important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
     /* background-color: #1d2224; */
     font-family: 'Poppins', sans-serif!important;
 }
