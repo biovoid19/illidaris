@@ -20,19 +20,36 @@
   <!-- ***************** INICIO DE LA SECCIÓN DEL HEADER ***************** -->
   <header>
     <nav class="fixed-top navbar navbar-expand-lg fondo" data-bs-theme="dark">
-      <div class="container">
+      <div class="container-fluid">
 
         <a href="#inicio" class="navbar-brand">
           <img src="assets/images/logo.png" alt="" height="64">
         </a>
 
         <!-- Button trigger modal -->
-        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#reproductor">
+        <!-- <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#reproductor">
           <span><i class="bi bi-music-note"></i></span>
+        </button> -->
+
+        <button class="btn player" onclick="back()">
+          <span>
+            <i class="bi bi-skip-start-circle-fill"></i>
+          </span>
         </button>
-
-
-
+        <!-- Botón play/pause -->
+        <button class="btn player" onclick="player()">
+          <span>
+            <i id="player" class="bi bi-pause-circle-fill"></i>
+          </span>
+        </button>
+        <!-- Botón next -->
+        <button class="btn player" onclick="next()">
+          <span>
+            <i class="bi bi-skip-end-circle-fill" role="button"></i>
+          </span>
+        </button>
+        <!-- <i onclick="hi()" class="bi bi-volume-up-fill"></i> -->
+        <input type="range" onchange="controlarVolumen()" class="volume" min="0" max="100" value="40" id="volumen">
 
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
           <span class="navbar-toggler-icon"></span>
@@ -102,23 +119,23 @@
             <button class="btn-close" data-bs-dismiss="modal"></button>
           </div>
 
-          <div class="modal-body">
+          <!-- <div class="modal-body">
             <div class="container-fluid">
               <div class="row justify-content-md-center">
                 <div class="col-md-8 d-flex justify-content-center align-items-center gap-2">
-                  <!-- Botón back -->
+                  Botón back
                   <button class="btn player" onclick="back()">
                     <span>
                       <i class="bi bi-skip-start-circle-fill"></i>
                     </span>
                   </button>
-                  <!-- Botón play/pause -->
+                  Botón play/pause
                   <button class="btn player" onclick="player()">
                     <span>
                       <i id="player" class="bi bi-pause-circle-fill"></i>
                     </span>
                   </button>
-                  <!-- Botón next -->
+                  Botón next
                   <button class="btn player" onclick="next()">
                     <span>
                       <i class="bi bi-skip-end-circle-fill" role="button"></i>
@@ -136,7 +153,7 @@
 
             </div>
 
-          </div>
+          </div> -->
 
 
         </div>
@@ -652,65 +669,39 @@
           <div class="card fondo">
             <div class="card-body">
               <h1 class="titulo">Bosting</h1>
-              <div id="carousel1Indicators" class="carousel slide carousel-container">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carousel1Indicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carousel1Indicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carousel1Indicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="assets/images/boosting/dolares-ktony.webp" class="d-block w-75" alt="...">
+                    <img src="assets/images/boosting/dolares-ktony.webp" class="d-block w-100 img-fluid" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/images/boosting/ktony-euros.webp" class="d-block w-75" alt="...">
+                    <img src="assets/images/boosting/ktony-euros.webp" class="d-block w-100 img-fluid" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/images/boosting/KTONY-soles.webp" class="d-block w-75" alt="...">
+                    <img src="assets/images/boosting/KTONY-soles.webp" class="d-block w-100 img-fluid" alt="...">
                   </div>
-                  <span>
-                    <a href="https://www.facebook.com/ktonydota2" target="_blank">
-                      <img src="assets/images/boosting/botonxd.webp" alt="Ktony">
-                    </a>
-                  </span>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel1Indicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel1Indicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+                <span class="span-image">
+                  <a href="https://www.facebook.com/ktonydota2" target="_blank">
+                    <img src="assets/images/boosting/botonxd.webp" alt="Ktony">
+                  </a>
+                </span>
               </div>
-              <br>
-
-              <div id="carousel2Indicators" class="carousel slide carousel-container">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carousel2Indicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carousel2Indicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                </div>
+              <br><br>
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="assets/images/boosting/euros.webp" class="d-block w-75" alt="...">
+                    <img src="assets/images/boosting/euros.webp" class="d-block w-100 img-fluid" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/images/boosting/soles.webp" class="d-block w-75" alt="...">
+                    <img src="assets/images/boosting/soles.webp" class="d-block w-100 img-fluid" alt="...">
                   </div>
-                  <span>
-                    <a href="https://www.facebook.com/VortexDK777" target="_blank">
-                      <img src="assets/images/boosting/logovortex2.webp" alt="Vortexdk">
-                    </a>
-                  </span>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel2Indicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel2Indicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+                <span class="span-image">
+                  <a href="https://www.facebook.com/VortexDK777" target="_blank">
+                    <img src="assets/images/boosting/logovortex2.webp" alt="Vortexdk">
+                  </a>
+                </span>
               </div>
             </div>
           </div>
@@ -783,7 +774,7 @@
   <section id="Streaming">
     <div class="container">
       <center>
-        <h1>Creadores de Contenido</h1>
+        <h1 class="titulo">Creadores de Contenido</h1>
         <div>
           <video src="assets/videos/InShot_20240109_222321027.mp4" controls></video>
         </div>
@@ -1118,54 +1109,94 @@
   <section id="Sorteos">
     <div class="container">
       <center>
-        <h1>Sorteos y Referencias</h1>
-        <div id="carouselExampleIndicators" class="carousel slide">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <h1 class="titulo">Sorteos y Referencias</h1>
+        <div class="container-fluid">
+          <div class="row">
+
+            <div class="col-md-6">
+              <div id="carouselExampleAutoplaying1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/images/sorteos/sorteo1.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/images/sorteos/sorteo6.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/images/sorteos/sorteo5.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/images/sorteos/sorteo4.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/images/sorteos/sorteo3.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/images/sorteos/sorteo2.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/images/sorteos/sorteo7.webp" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+              <div id="carouselExampleAutoplaying2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/sorteos/sorteo1.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/images/sorteos/sorteo6.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/images/sorteos/sorteo5.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/images/sorteos/sorteo4.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/images/sorteos/sorteo3.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/images/sorteos/sorteo2.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/images/sorteos/sorteo7.webp" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="assets/images/sorteos/sorteo6.webp" class="d-block " width="90%" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="assets/images/sorteos/sorteo5.webp" class="d-block" width="70%" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="assets/images/sorteos/sorteo4.webp" class="d-block" width="70%" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="assets/images/sorteos/sorteo3.webp" class="d-block" width="70%" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="assets/images/sorteos/sorteo2.webp" class="d-block" width="70%" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="assets/images/sorteos/sorteo1.webp" class="d-block" width="70%" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </center>
     </div>
   </section>
-  <br><br>
+  <br><br><br>
   <section id="Memes">
 
     <div class="container">
       <center>
-        <h1>Memes</h1>
+        <h1 class="titulo">Memes</h1>
       </center>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
@@ -1239,7 +1270,7 @@
   <!-- ***************** FIN DE LA SECCIÓN DEL FOOTER ***************** -->
   <!-- /////////////////////////////////////////////////////////////////////////// -->
   <!-- ***************** SECCIÓN DE SCRIPTS *****************-->
-  <!-- <script src="js/app.js"></script> -->
+  <script src="js/app.js"></script>
   <script src="js/nav.js"></script>
   <script src="js/lista.js"></script>
   <script src="js/formulario.js"></script>

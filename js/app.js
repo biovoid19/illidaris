@@ -1,6 +1,6 @@
 // Variables generales
 let audios = [
-  'assets/audio/diez.mp3',
+  // 'assets/audio/diez.mp3',
   'assets/audio/theme.mp3',
 
 ];

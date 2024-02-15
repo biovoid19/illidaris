@@ -102,7 +102,11 @@ section {
 }
 
 .btn.player {
-    font-size: 2rem;
+    font-size: 3vh;
+}
+.btn.player:hover {
+    font-size: 3vh;
+    color: #fff;
 }
 
 .form-image {
@@ -172,7 +176,7 @@ input[type="range"] {
     appearance: none;
     background: transparent;
     cursor: pointer;
-    width: 15rem;
+    width: 8rem;
 }
 
 /* Removes default focus */
@@ -753,4 +757,31 @@ input[type="range"]:focus::-moz-range-thumb {
     
     color: #fdb900;
     border: 1px solid #fdb900;
+}
+
+
+.carousel{
+    position: relative!important;
+}
+.span-image{
+    position: absolute!important;
+    top: 20px!important; 
+    left: 10px!important; 
+    z-index: 1!important;
+    /* width: 3vh!important; */
+}
+.carrusel img {
+    width: 100%;
+    height: 100%;
+}
+
+.span-image img{
+    /* max-width: 35vh; */
+    margin-left: 80%;
+    width: 20%;
+}
+
+#inicio{
+    /* margin-top: 15vh!important; */
+    padding-top: 15vh!important;
 }
