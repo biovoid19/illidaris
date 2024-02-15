@@ -729,3 +729,28 @@ input[type="range"]:focus::-moz-range-thumb {
 
 
 /* fin footer*/
+
+
+/* Inicio estilos botones */
+.btn-illidari{
+    border: 1px solid #ccc;
+    min-width: 30vh;
+    text-decoration: none;
+    color: #ccc;
+    display: flex;
+    justify-content: center;
+    border-radius: 1vh;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 5px 1vh 5px;
+}
+
+.btn-illidari i{
+    padding-right: 1vh;
+}
+
+.btn-illidari:hover{
+    
+    color: #fdb900;
+    border: 1px solid #fdb900;
+}
